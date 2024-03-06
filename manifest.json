@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Copy HTML to Clipboard",
+    "version": "1.0",
+    "permissions": ["activeTab", "clipboardWrite", "scripting"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "commands": {
+      "copy-html": {
+        "suggested_key": {
+            "default": "Alt+X",
+            "mac": "Alt+X"
+        },
+        "description": "Copy HTML to Clipboard"
+      }
+    },
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
